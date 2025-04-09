@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fcd5ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.contenedor {
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 300px;
+  width: 100%;
+}
+
+h1 {
+  color: #d45d79;
+  font-size: 1.5em;
+}
+
+.opcion {
+  margin: 15px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #d45d79;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #d45d79;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b94d66;
+}
+
+.horno-img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.animar-horno {
+  animation: hornear 1s infinite alternate;
+}
+
+@keyframes hornear {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}

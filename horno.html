@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horneando...</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <img src="logo-sin-fondo.png" alt="Logo" class="logo" />
+  <div class="contenedor">
+    <div class="horno">
+      <img src="horno.png" alt="Horno" id="hornoImg" class="horno-img animar-horno"/>
+    </div>
+    <p id="mensaje">Tu galleta se está horneando...</p>
+  </div>
+  <script>
+    setTimeout(() => {
+      document.getElementById("mensaje").innerText = "¡Lista!";
+      document.getElementById("hornoImg").classList.remove("animar-horno");
+    }, 4000);
+  </script>
+</body>
+</html>
